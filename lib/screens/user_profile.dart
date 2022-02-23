@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:prototype_ui_app/models/user.dart';
 import 'package:prototype_ui_app/ultis/user_preference.dart';
 
-import '../widgets/appbar_user.dart';
-import '../widgets/numbers_widget.dart';
-import '../widgets/profile_widget.dart';
+import '../widgets/appbar_base.dart';
+import '../widgets/user_numbers_widget.dart';
+import '../widgets/user_profile_widget.dart';
 import 'edit_profile.dart';
 
 class UserProfile extends StatefulWidget {

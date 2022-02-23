@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:prototype_ui_app/ultis/user_preference.dart';
-import 'package:prototype_ui_app/widgets/appbar_user.dart';
-import 'package:prototype_ui_app/widgets/profile_widget.dart';
+import 'package:prototype_ui_app/widgets/appbar_base.dart';
+import 'package:prototype_ui_app/widgets/user_profile_widget.dart';
 
 import '../models/user.dart';
-import '../widgets/TextFieldWidget.dart';
+import '../widgets/text_field_widget.dart';
 
 class EditProfilePage extends StatefulWidget {
   const EditProfilePage({Key? key}) : super(key: key);
@@ -50,7 +50,6 @@ class _EditProfilePageStage extends State<EditProfilePage>{
           onChanged: (about) {},
         ),
         const SizedBox(height: 16),
-
       ],
     ),
   );
