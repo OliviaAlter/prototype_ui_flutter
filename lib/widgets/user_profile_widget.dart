@@ -15,16 +15,16 @@ class ProfileWidget extends StatelessWidget{
     final color = Theme.of(context).colorScheme.primary;
 
     return Center(
-      child: Stack(
-        children: [
-          buildImage(),
-          Positioned(
-              bottom: 0,
-              right: 4,
-              child: buildEditIcon(color)
-          )
-        ],
-      )
+        child: Stack(
+          children: [
+            buildImage(),
+            Positioned(
+                bottom: 0,
+                right: 4,
+                child: buildEditIcon(color)
+            )
+          ],
+        )
     );
   }
 
@@ -32,16 +32,16 @@ class ProfileWidget extends StatelessWidget{
     final image = NetworkImage(imagePath);
 
     return ClipOval(
-      child: Material(
-        color: Colors.transparent,
-        child: Ink.image(
-            image: image,
-            fit: BoxFit.cover,
-            width: 128,
-            height: 128,
-            child: InkWell(onTap: onClicked)
+        child: Material(
+            color: Colors.transparent,
+            child: Ink.image(
+                image: image,
+                fit: BoxFit.cover,
+                width: 128,
+                height: 128,
+                child: InkWell(onTap: onClicked)
+            )
         )
-      )
     );
   }
 
@@ -49,11 +49,11 @@ class ProfileWidget extends StatelessWidget{
     color: Colors.white60,
     all: 3,
     child: buildCircle(
-        all : 8,
-        color: color,
-        child: Icon(
+      all : 8,
+      color: color,
+      child: Icon(
           isEdit ? Icons.edit : Icons.photo_camera_rounded,
-          size: 18,
+          size: 13,
           color: Colors.white
       ),
     ),
@@ -65,10 +65,10 @@ class ProfileWidget extends StatelessWidget{
     required Widget child})
   => ClipOval(
       child: Container(
-      padding: EdgeInsets.all(all),
-      color: color,
-      child: child,
-    )
+        padding: EdgeInsets.all(all),
+        color: color,
+        child: child,
+      )
   );
 
 }
