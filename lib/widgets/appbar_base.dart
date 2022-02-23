@@ -7,7 +7,7 @@ AppBar buildAppBar(BuildContext context){
     automaticallyImplyLeading: false,
     backgroundColor: Colors.black87,
     elevation: 1,
-    toolbarHeight: 44,
+    toolbarHeight: 58,
   );
 }
 
@@ -18,7 +18,7 @@ AppBar buildAppBarEditMode(BuildContext context){
     automaticallyImplyLeading: true,
     backgroundColor: Colors.black87,
     elevation: 1,
-    toolbarHeight: 44,
+    toolbarHeight: 58,
   );
 }
 

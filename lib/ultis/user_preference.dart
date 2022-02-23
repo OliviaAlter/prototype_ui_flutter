@@ -1,5 +1,5 @@
 
-import 'package:prototype_ui_app/models/user.dart';
+import 'package:prototype_ui_app/models/user_entity.dart';
 
 class UserPreference {
   static const myUser = User(

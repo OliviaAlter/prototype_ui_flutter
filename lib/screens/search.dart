@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import '../data/charity_data.dart';
 import '../models/charity_entity.dart';
+import '../widgets/charity_details_widget.dart';
 
-late List<CharityLocation> charityLocations;
+late List<Charity> charityLocations;
 
 class Search extends StatefulWidget {
   const Search({Key? key}) : super(key: key);
@@ -29,11 +30,29 @@ class _FilterLocalListPageState extends State<Search>{
               itemCount: charityLocations.length,
               itemBuilder: (context, index) {
                 final charity = charityLocations[index];
-                return buildCharity(charity);
+                return buildCharity(charity, index);
               }),
         ),
       ],
     ),
+  );
+
+
+  Widget buildCharity(Charity charityLocation, int index)
+  => ListTile(
+    leading: Image.network(
+      charityLocation.imageUrl,
+      fit: BoxFit.cover,
+      width: 50,
+      height: 50,
+    ),
+    onTap: () {
+      Navigator.of(context).push(
+          MaterialPageRoute(builder: (context)
+          => DetailCharity(charityLocation: charityLocations[index])));
+    },
+    title: Text(charityLocation.name),
+    subtitle: Text(charityLocation.description),
   );
     /*
       appBar: AppBar(
@@ -69,17 +88,6 @@ class _FilterLocalListPageState extends State<Search>{
     );
   */
 
-  Widget buildCharity(CharityLocation charityLocation)
-  => ListTile(
-        leading: Image.network(
-          charityLocation.imageUrl,
-          fit: BoxFit.cover,
-          width: 50,
-          height: 50,
-        ),
-        title: Text(charityLocation.name),
-        subtitle: Text(charityLocation.description),
-      );
 }
 
 AppBar buildAppBarSearch(BuildContext context){
@@ -102,7 +110,7 @@ AppBar buildAppBarSearch(BuildContext context){
     automaticallyImplyLeading: false,
     backgroundColor: Colors.black87,
     elevation: 1,
-    toolbarHeight: 44,
+    toolbarHeight: 58,
   );
 }
 

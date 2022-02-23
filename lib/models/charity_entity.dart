@@ -1,10 +1,10 @@
-class CharityLocation{
+class Charity{
   final int id;
   final String name;
   final String description;
   final String imageUrl;
 
-  const CharityLocation({
+  const Charity({
     required this.id,
     required this.name,
     required this.description,
