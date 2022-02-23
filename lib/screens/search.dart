@@ -14,6 +14,7 @@ class Search extends StatefulWidget {
 
   class _FilterLocalListPageState extends State<Search>{
   late List<CharityLocation> charityLocations;
+  String query = '';
 
   @override
   void initState(){
@@ -24,14 +25,19 @@ class Search extends StatefulWidget {
   @override
     Widget build(BuildContext context) => Scaffold(
       appBar: buildAppBarSearch(context),
-        body: ListView.builder(
-          itemCount: charityLocations.length,
-          itemBuilder: (context, index) {
-        final charity = charityLocations[index];
-      return buildCharity(charity);
-      },
-    ),
-  );
+        body: Column(
+          children: <Widget>[
+            Expanded(
+              child: ListView.builder(
+                itemCount: charityLocations.length,
+                itemBuilder: (context, index) {
+                final charity = charityLocations[index];
+                return buildCharity(charity);
+              }),
+            ),
+          ],
+        ),
+      );
 
   Widget buildCharity(CharityLocation charityLocation) => ListTile(
     leading: Image.network(
@@ -43,7 +49,9 @@ class Search extends StatefulWidget {
     title: Text(charityLocation.name),
     subtitle: Text(charityLocation.description),
   );
+
 }
+
 
 
 

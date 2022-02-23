@@ -40,7 +40,7 @@ class NumbersWidget extends StatelessWidget {
       ),
     );
 
-  Widget buildDivider() =>  Container(
+  Widget buildDivider() =>  const SizedBox(
     height: 25,
     child: VerticalDivider()
   );
