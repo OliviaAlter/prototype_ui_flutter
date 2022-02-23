@@ -20,8 +20,22 @@ class _FilterLocalListPageState extends State<Search>{
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
+    appBar: buildAppBarSearch(context),
+    body: Column(
+      children: <Widget>[
+        Expanded(
+          child: ListView.builder(
+              itemCount: charityLocations.length,
+              itemBuilder: (context, index) {
+                final charity = charityLocations[index];
+                return buildCharity(charity);
+              }),
+        ),
+      ],
+    ),
+  );
+    /*
       appBar: AppBar(
         centerTitle: true,
         title:
@@ -41,6 +55,7 @@ class _FilterLocalListPageState extends State<Search>{
                   return buildCharity(charity);
                 }),
           ),
+
           IconButton(
               icon: const Icon(Icons.search),
               onPressed: () {
@@ -52,7 +67,7 @@ class _FilterLocalListPageState extends State<Search>{
         ],
       ),
     );
-  }
+  */
 
   Widget buildCharity(CharityLocation charityLocation)
   => ListTile(
@@ -66,6 +81,31 @@ class _FilterLocalListPageState extends State<Search>{
         subtitle: Text(charityLocation.description),
       );
 }
+
+AppBar buildAppBarSearch(BuildContext context){
+  return AppBar(
+    centerTitle: true,
+    title: const Text("Charity organizations",
+      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+    ),
+    actions: <Widget>[
+      //IconButton(icon: const Icon(Icons.search), onPressed: () {}),
+      IconButton(
+          icon: const Icon(Icons.search),
+          onPressed: () {
+            showSearch(
+              context: context,
+              delegate: DataSearch(),
+            );
+          }),
+    ],
+    automaticallyImplyLeading: false,
+    backgroundColor: Colors.black87,
+    elevation: 1,
+    toolbarHeight: 44,
+  );
+}
+
 
 class DataSearch extends SearchDelegate<String> {
   final charityNames = [
