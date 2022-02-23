@@ -1,6 +1,8 @@
 
 import 'package:prototype_ui_app/models/charity_entity.dart';
 
+String imageUrl = "https://avatars.githubusercontent.com/u/59114783?s=400&u=0aa0b531ab83d1754e2761fa2d0e5e61f8a8ec77&v=4";
+
 final allCharities = <CharityLocation>[
   CharityLocation(id: 1, name: "A", description: "What", imageUrl: imageUrl),
   CharityLocation(id: 2, name: "B", description: "What", imageUrl: imageUrl),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prototype_ui_app/data/charity_data.dart';
 import 'package:prototype_ui_app/models/charity_entity.dart';
 
 import '../widgets/appbar_base.dart';
