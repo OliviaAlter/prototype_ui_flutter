@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:prototype_ui_app/screens/appointment.dart';
 import 'package:prototype_ui_app/screens/donation.dart';
 import 'package:prototype_ui_app/search-charity/search.dart';
-import 'package:prototype_ui_app/screens/news.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:prototype_ui_app/user-profile/user_profile.dart';
 
@@ -50,13 +49,9 @@ class _HomePageState extends State<HomePage> {
             label: "Search",
           ),
           BottomNavigationBarItem(
-            icon: Icon(LineIcons.bookmark),
+            icon: Icon(Icons.house_siding),
             label: "Appointment",
           ),
-          //BottomNavigationBarItem(
-          //  icon: Icon(LineIcons.bell),
-          //  label: "Notification",
-          //),
           BottomNavigationBarItem(
             icon: Icon(LineIcons.userCircle),
             label: "Profile",
