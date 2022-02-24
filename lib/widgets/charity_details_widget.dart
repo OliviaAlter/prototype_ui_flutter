@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../models/charity_entity.dart';
-import '../user-profile/user_profile.dart';
+import '../user-profile/charity_profile.dart';
 
 class DetailCharity extends StatelessWidget{
   final Charity charityLocation;

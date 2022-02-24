@@ -9,11 +9,12 @@ class NumbersWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          buildText(context, 'holder', 'holder'),
           buildDivider(),
-          buildText(context, 'holder', 'holder'),
+          buildText(context, 'Joined', 'April 2018'),
           buildDivider(),
-          buildText(context, 'holder', 'holder'),
+          //buildText(context, 'Donation  ', 'holder'),
+          //buildDivider(),
+          //buildText(context, 'holder', 'holder'),
         ],
       ),
     );
@@ -33,7 +34,7 @@ class NumbersWidget extends StatelessWidget {
           ),
           const SizedBox(height: 2),
           Text(
-            value,
+            text,
             style: const TextStyle(fontWeight: FontWeight.normal, fontSize: 18),
           ),
         ],

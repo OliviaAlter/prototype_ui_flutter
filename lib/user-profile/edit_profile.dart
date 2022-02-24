@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prototype_ui_app/user-profile/user_profile.dart';
 import 'package:prototype_ui_app/utils/user_preference.dart';
 import 'package:prototype_ui_app/widgets/appbar_base_widget.dart';
 import '../widgets/user_profile_custom_widget.dart';
@@ -46,10 +47,27 @@ class _EditProfilePageStage extends State<EditProfilePage>{
         TextFieldWidget(
           label: "About",
           text: user.about,
-          maxLines: 5,
+          maxLines: 4,
           onChanged: (about) {},
         ),
         const SizedBox(height: 16),
+        Container(
+          height: 35,
+          alignment: Alignment.center,
+          child: TextButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const UserProfile()));
+            },
+            child: const Text(
+              "Save", textAlign: TextAlign.center,
+              style: TextStyle(
+                  color: Colors.blueAccent, fontWeight: FontWeight.bold, fontSize: 20),
+            ))
+      ),
+
       ],
     ),
   );

@@ -3,7 +3,6 @@ import 'package:prototype_ui_app/models/user_entity.dart';
 import 'package:prototype_ui_app/user-profile/edit_profile.dart';
 import 'package:prototype_ui_app/utils/user_preference.dart';
 
-import '../models/charity_entity.dart';
 import '../widgets/appbar_base_widget.dart';
 import '../widgets/user_numbers_widget.dart';
 import '../widgets/user_profile_custom_widget.dart';
@@ -76,29 +75,3 @@ class _UserProfileState extends State<UserProfile>{
       )
   );
 }
-
-Widget buildAboutCharity(Charity charity) => Container(
-    padding: const EdgeInsets.symmetric(horizontal: 40),
-    child: Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const Text(
-          "About this charity",
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24, color: Colors.black87),
-          textAlign: TextAlign.center,
-        ),
-        const SizedBox(height: 25),
-        Text("Location : " +
-          charity.address,
-          style: const TextStyle(fontWeight: FontWeight.normal, fontSize: 20, color: Colors.black87, height: 0.8),
-          textAlign: TextAlign.center,
-        ),
-        const SizedBox(height: 25),
-        Text(
-          charity.description,
-          style: const TextStyle(fontWeight: FontWeight.normal, fontSize: 20, color: Colors.black87, height: 0.8),
-          textAlign: TextAlign.center,
-        ),
-      ],
-    )
-);

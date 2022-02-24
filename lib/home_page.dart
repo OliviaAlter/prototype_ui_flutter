@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:prototype_ui_app/screens/appointment.dart';
 import 'package:prototype_ui_app/screens/donation.dart';
 import 'package:prototype_ui_app/search-charity/search.dart';
 import 'package:line_icons/line_icons.dart';
@@ -17,7 +16,7 @@ class _HomePageState extends State<HomePage> {
   final List<Widget> _children = [
     const Donation(), // news
     const Search(), //search -> sub-screen : donation -> food / assets donation
-    const Appointment(), //
+    Container(), //
     const UserProfile(), //
   ];
 

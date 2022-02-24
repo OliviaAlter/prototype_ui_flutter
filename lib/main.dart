@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'login.dart';
+import 'login/temp_login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.blue.shade400,
         dividerColor: Colors.black87,
       ),
-      home: const Login(),
+      home: const TempLogin(),
     );
   }
 
