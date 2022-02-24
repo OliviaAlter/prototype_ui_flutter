@@ -86,9 +86,14 @@ Widget buildAboutCharity(Charity charity) => Container(
           "About this charity",
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24, color: Colors.black87),
           textAlign: TextAlign.center,
-
         ),
-        const SizedBox(height: 18),
+        const SizedBox(height: 25),
+        Text("Location : " +
+          charity.address,
+          style: const TextStyle(fontWeight: FontWeight.normal, fontSize: 20, color: Colors.black87, height: 0.8),
+          textAlign: TextAlign.center,
+        ),
+        const SizedBox(height: 25),
         Text(
           charity.description,
           style: const TextStyle(fontWeight: FontWeight.normal, fontSize: 20, color: Colors.black87, height: 0.8),
