@@ -51,7 +51,7 @@ class _FilterLocalListPageState extends State<Search>{
           => DetailCharity(charityLocation: charityLocations[index])));
     },
     title: Text(charityLocation.name),
-    subtitle: Text(charityLocation.description),
+    subtitle: Text("Charity location : " + charityLocation.address),
   );
 }
 

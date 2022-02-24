@@ -11,7 +11,12 @@ class DetailCharity extends StatelessWidget{
   @override
   Widget build(BuildContext context)
     => Scaffold(
-      appBar: AppBar(title: Text(charityLocation.name)),
+      appBar: AppBar(
+        title: Text(charityLocation.name),
+        automaticallyImplyLeading: true,
+        backgroundColor: Colors.black87,
+        elevation: 1,
+        toolbarHeight: 58,),
       body: ListView(
         physics: const BouncingScrollPhysics(),
         children: [
