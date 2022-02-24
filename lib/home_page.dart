@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:prototype_ui_app/screens/appointment.dart';
-import 'package:prototype_ui_app/screens/search.dart';
+import 'package:prototype_ui_app/screens/donation.dart';
+import 'package:prototype_ui_app/search-charity/search.dart';
 import 'package:prototype_ui_app/screens/news.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:prototype_ui_app/screens/user_profile.dart';
+import 'package:prototype_ui_app/user-profile/user_profile.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -15,7 +16,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
   final List<Widget> _children = [
-    const News(), // news
+    const Donation(), // news
     const Search(), //search -> sub-screen : donation -> food / assets donation
     const Appointment(), //
     const UserProfile(), //

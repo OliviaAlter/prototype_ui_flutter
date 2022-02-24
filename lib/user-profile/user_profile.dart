@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:prototype_ui_app/models/user_entity.dart';
-import 'package:prototype_ui_app/ultis/user_preference.dart';
+import 'package:prototype_ui_app/user-profile/edit_profile.dart';
+import 'package:prototype_ui_app/utils/user_preference.dart';
 
 import '../models/charity_entity.dart';
-import '../widgets/appbar_base.dart';
+import '../widgets/appbar_base_widget.dart';
 import '../widgets/user_numbers_widget.dart';
 import '../widgets/user_profile_custom_widget.dart';
-import 'edit_profile.dart';
 
 class UserProfile extends StatefulWidget {
   const UserProfile({Key? key}) : super(key: key);

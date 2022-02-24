@@ -37,7 +37,6 @@ class _FilterLocalListPageState extends State<Search>{
     ),
   );
 
-
   Widget buildCharity(Charity charityLocation, int index)
   => ListTile(
     leading: Image.network(
@@ -54,40 +53,6 @@ class _FilterLocalListPageState extends State<Search>{
     title: Text(charityLocation.name),
     subtitle: Text(charityLocation.description),
   );
-    /*
-      appBar: AppBar(
-        centerTitle: true,
-        title:
-          const Text("Charity organizations",
-            style: TextStyle(fontSize: 20)
-            ),
-        automaticallyImplyLeading: false,
-        backgroundColor: Colors.black87,
-        //elevation: 1,
-        //toolbarHeight: 44,
-        actions: <Widget>[
-          Expanded(
-            child: ListView.builder(
-                itemCount: charityLocations.length,
-                itemBuilder: (context, index) {
-                  final charity = charityLocations[index];
-                  return buildCharity(charity);
-                }),
-          ),
-
-          IconButton(
-              icon: const Icon(Icons.search),
-              onPressed: () {
-                showSearch(
-                  context: context,
-                  delegate: DataSearch(),
-                );
-              })
-        ],
-      ),
-    );
-  */
-
 }
 
 AppBar buildAppBarSearch(BuildContext context){
@@ -113,7 +78,6 @@ AppBar buildAppBarSearch(BuildContext context){
     toolbarHeight: 58,
   );
 }
-
 
 class DataSearch extends SearchDelegate<String> {
   final charityNames = [

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:prototype_ui_app/ultis/user_preference.dart';
-import 'package:prototype_ui_app/widgets/appbar_base.dart';
+import 'package:prototype_ui_app/utils/user_preference.dart';
+import 'package:prototype_ui_app/widgets/appbar_base_widget.dart';
 import '../widgets/user_profile_custom_widget.dart';
 
 import '../models/user_entity.dart';
