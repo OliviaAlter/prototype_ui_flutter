@@ -18,9 +18,18 @@ class _TempLoginState extends State<TempLogin> {
       backgroundColor: Colors.transparent,
       body: Stack(
         children: [
-          Opacity(opacity: 0.56, child: Image.asset("assets/cutebg.png")),
+          const Opacity(
+              opacity: 0.56,
+                child: Image(
+                  image: AssetImage("assets/a.jpg"),
+                  alignment: Alignment.center,
+                  height: double.infinity,
+                  width: double.infinity,
+                  fit: BoxFit.fill,
+              ),
+          ),
           const Positioned(
-            top: 55,
+            top: 45,
             left: 40,
             child: Text(
               "Sign In",
@@ -32,9 +41,9 @@ class _TempLoginState extends State<TempLogin> {
           ),
           Container(
             width: double.infinity,
-            height: 510,
+            height: 520,
             padding: const EdgeInsets.only(top: 15, left: 15, right: 15),
-            margin: const EdgeInsets.only(top: 125, left: 20, right: 20),
+            margin: const EdgeInsets.only(top: 110, left: 20, right: 20),
             decoration: BoxDecoration(
                 color: Colors.grey.shade400.withOpacity(0.5),
                 borderRadius: BorderRadius.circular(10)),
@@ -68,7 +77,7 @@ class _TempLoginState extends State<TempLogin> {
                     style: TextButton.styleFrom(
                         backgroundColor: Colors.indigoAccent,
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 130, vertical: 13)),
+                            horizontal: 145, vertical: 13)),
                     onPressed: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) => const HomePage()));
@@ -95,7 +104,7 @@ class _TempLoginState extends State<TempLogin> {
                   ),
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 16,
                 ),
                 InkWell(
                   onTap: () {},
@@ -104,7 +113,7 @@ class _TempLoginState extends State<TempLogin> {
                     padding: const EdgeInsets.only(left: 12),
                     height: 35,
                     decoration: BoxDecoration(
-                        color: Colors.white70,
+                        color: Colors.white54,
                         borderRadius: BorderRadius.circular(10)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -127,7 +136,7 @@ class _TempLoginState extends State<TempLogin> {
                   ),
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 33,
                 ),
                 InkWell(
                   onTap: () {},
@@ -136,7 +145,7 @@ class _TempLoginState extends State<TempLogin> {
                     width: double.infinity,
                     height: 35,
                     decoration: BoxDecoration(
-                        color: Colors.white70,
+                        color: Colors.white54,
                         borderRadius: BorderRadius.circular(10)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,

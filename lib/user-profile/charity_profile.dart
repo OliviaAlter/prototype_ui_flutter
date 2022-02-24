@@ -23,7 +23,11 @@ Widget buildAboutCharity(Charity charity) => Container(
         Text(
           charity.description,
           style: const TextStyle(fontWeight: FontWeight.normal, fontSize: 20, color: Colors.black87, height: 0.8),
-          textAlign: TextAlign.center,
+        ),
+        const SizedBox(height: 25),
+        Text(
+          charity.ongoingEvent,
+          style: const TextStyle(fontWeight: FontWeight.normal, fontSize: 20, color: Colors.black87, height: 0.8),
         ),
       ],
     )

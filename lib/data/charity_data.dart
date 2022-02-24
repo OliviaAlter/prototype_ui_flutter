@@ -1,22 +1,23 @@
 import 'package:prototype_ui_app/models/charity_entity.dart';
 
 String imageUrl = "https://avatars.githubusercontent.com/u/59114783?s=400&u=0aa0b531ab83d1754e2761fa2d0e5e61f8a8ec77&v=4";
-
+String events = "Place holder - For event placement";
+String desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
 final allCharities = <Charity>[
-  Charity(id: 1, name: "A", description: "What", imageUrl: imageUrl, address: "HCM"),
-  Charity(id: 2, name: "B", description: "What", imageUrl: imageUrl, address: "HN"),
-  Charity(id: 3, name: "C", description: "What", imageUrl: imageUrl, address: "HCM"),
-  Charity(id: 4, name: "D", description: "What", imageUrl: imageUrl, address: "HN"),
-  Charity(id: 5, name: "AB", description: "What", imageUrl: imageUrl, address: "HCM"),
-  Charity(id: 6, name: "AC", description: "What", imageUrl: imageUrl, address: "HCM"),
-  Charity(id: 7, name: "AD", description: "What", imageUrl: imageUrl, address: "Hue"),
-  Charity(id: 8, name: "BA", description: "What", imageUrl: imageUrl, address: "HCM"),
-  Charity(id: 9, name: "BC", description: "What", imageUrl: imageUrl, address: "DN"),
-  Charity(id: 10, name: "BD", description: "What", imageUrl: imageUrl, address: "HCM"),
-  Charity(id: 11, name: "CA", description: "What", imageUrl: imageUrl, address: "HCM"),
-  Charity(id: 12, name: "CB", description: "What", imageUrl: imageUrl, address: "DN"),
-  Charity(id: 13, name: "CD", description: "What", imageUrl: imageUrl, address: "HCM"),
-  Charity(id: 14, name: "DA", description: "What", imageUrl: imageUrl, address: "DN"),
-  Charity(id: 15, name: "DB", description: "What", imageUrl: imageUrl, address: "HCM"),
-  Charity(id: 16, name: "DC", description: "What", imageUrl: imageUrl, address: "HN"),
+  Charity(id: 1, name: "A", description: desc, imageUrl: "https://images.squarespace-cdn.com/content/v1/5b5f9fb45b409b45400b06af/1534010051594-9674GZQ5XBIE7EP82GGV/copy.png?format=1000w", address: "HCM", ongoingEvent: events),
+  Charity(id: 2, name: "B", description: desc, imageUrl: "https://image.isu.pub/181205071534-2ca9acf85f3876b11ddf568389b46480/jpg/page_1.jpg", address: "HN", ongoingEvent: events),
+  Charity(id: 3, name: "C", description: desc, imageUrl: "https://i.pinimg.com/736x/28/19/5c/28195ca5bc5671e5149030794967f38c.jpg", address: "HCM", ongoingEvent: events),
+  Charity(id: 4, name: "D", description: desc, imageUrl: "https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/241571513_100701812361499_4333468071366394748_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=SGoDkwBd3nYAX_Il8Bj&tn=rxgNnug_tbHOxD-d&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT94xzcLjz2HaKUVEfGfAqlioJ-ElRum6V9xryGhUA-zqg&oe=621B554C", address: "HN", ongoingEvent: events),
+  Charity(id: 5, name: "AB", description: desc, imageUrl: "https://media.istockphoto.com/photos/people-celebration-give-help-donate-charity-concept-picture-id475109178", address: "HCM", ongoingEvent: events),
+  Charity(id: 6, name: "AC", description: desc, imageUrl: "https://scontent.fsgn4-1.fna.fbcdn.net/v/t31.18172-8/10379964_10152209831449037_5057609553105034344_o.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=93WSXkHekqYAX8zpMgh&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT_xD8p1ae2-nHFSJwuTAM4M4rCW-9OfoByC4qoXV0-5fg&oe=623E818C", address: "HCM", ongoingEvent: events),
+  Charity(id: 7, name: "AD", description: desc, imageUrl: "https://scontent.fsgn2-5.fna.fbcdn.net/v/t1.15752-9/270207001_1612625829072696_6223585382240160026_n.png?_nc_cat=102&ccb=1-5&_nc_sid=ae9488&_nc_ohc=hAb58dW15gIAX9aMocC&_nc_ht=scontent.fsgn2-5.fna&oh=03_AVKXrCOvjYfsx-DC2PvDLSsmPhyuRaww0o0Xv2wd_tlhxg&oe=623AF265", address: "Hue", ongoingEvent: events),
+  Charity(id: 8, name: "BA", description: desc, imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOgCqwc--gHftVszhIawbWv3pcfdMT_LiOir2jGK4ou9O_ueIeGRD2o7MElKEziakJrjE&usqp=CAU", address: "HCM", ongoingEvent: events),
+  Charity(id: 9, name: "BC", description: desc, imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvHhlwm6ig4YGsivjfBuGQnRgNfgXf9BqZGHXWTaD425n7k0V2_1Ue-62tISzKMI_a9_4&usqp=CAU", address: "DN", ongoingEvent: events),
+  Charity(id: 10, name: "BD", description: desc, imageUrl: "https://t4.ftcdn.net/jpg/04/11/55/29/360_F_411552922_hITqmnl9eRsQF0AFn9j5xq8dQLhcsNOP.jpg", address: "HCM", ongoingEvent: events),
+  Charity(id: 11, name: "CA", description: desc, imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDdc-9ryqymUZJz5QijFtnV5TgkxfvmYaMNg&usqp=CAU", address: "HCM", ongoingEvent: events),
+  Charity(id: 12, name: "CB", description: desc, imageUrl: "https://specials-images.forbesimg.com/imageserve/5a32ad2331358e6e1b1d7138/416x416.jpg?background=000000&cropX1=0&cropX2=416&cropY1=0&cropY2=416", address: "DN", ongoingEvent: events),
+  Charity(id: 13, name: "CD", description: desc, imageUrl: "https://www.charityforhope.com/wp-content/uploads/Screen-Shot-2020-03-18-at-4.15.23-PM-e1584573965374.png", address: "HCM", ongoingEvent: events),
+  Charity(id: 14, name: "DA", description: desc, imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPr3Qha8lxx2xltPUAfHKZLAv3psrgZXAAOUtGorsPxdZsDNherY-JXruSUs06I1w3liQ&usqp=CAU", address: "DN", ongoingEvent: events),
+  Charity(id: 15, name: "DB", description: desc, imageUrl: "https://trianfoundation.com/wp-content/uploads/2021/04/Logo.jpeg", address: "HCM", ongoingEvent: events),
+  Charity(id: 16, name: "DC", description: desc, imageUrl: "https://mm.aiircdn.com/3/5a0bedd3b10eb.png", address: "HN", ongoingEvent: events),
 ];

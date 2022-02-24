@@ -81,6 +81,7 @@ flutter:
     - assets/slide3.jpg
     - assets/fb.png
     - assets/googleicon.png
+    - assets/a.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

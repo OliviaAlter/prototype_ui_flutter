@@ -20,10 +20,10 @@ class DetailCharity extends StatelessWidget{
       body: ListView(
         physics: const BouncingScrollPhysics(),
         children: [
-          const SizedBox(height: 20),
+          const SizedBox(height: 15),
           Image.network(charityLocation.imageUrl,
               fit: BoxFit.cover,
-              width: 150,
+              width: 180,
               height: 150),
 
           const SizedBox(height: 20),

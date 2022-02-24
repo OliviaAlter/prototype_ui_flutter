@@ -16,9 +16,18 @@ class _RegisterState extends State<Register>{
       backgroundColor: Colors.transparent,
       body: Stack(
         children: [
-          Opacity(opacity: 0.56, child: Image.asset("assets/cutebg.png")),
+          const Opacity(
+            opacity: 0.56,
+            child: Image(
+              image: AssetImage("assets/a.jpg"),
+              alignment: Alignment.center,
+              height: double.infinity,
+              width: double.infinity,
+              fit: BoxFit.fill,
+            ),
+          ),
           const Positioned(
-            top: 55,
+            top: 45,
             left: 40,
             child: Text(
               "Sign Up",
@@ -30,9 +39,9 @@ class _RegisterState extends State<Register>{
           ),
           Container(
             width: double.infinity,
-            height: 510,
+            height: 520,
             padding: const EdgeInsets.only(top: 15, left: 15, right: 15),
-            margin: const EdgeInsets.only(top: 125, left: 20, right: 20),
+            margin: const EdgeInsets.only(top: 110, left: 20, right: 20),
             decoration: BoxDecoration(
                 color: Colors.grey.shade400.withOpacity(0.5),
                 borderRadius: BorderRadius.circular(10)),
@@ -42,7 +51,7 @@ class _RegisterState extends State<Register>{
                 TextField(
                   decoration: InputDecoration(
                       hintText: "E-mail",
-                      fillColor: Colors.white70,
+                      fillColor: Colors.white54,
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)),
                       filled: true),
@@ -53,7 +62,7 @@ class _RegisterState extends State<Register>{
                 TextField(
                   decoration: InputDecoration(
                       hintText: "Password",
-                      fillColor: Colors.white70,
+                      fillColor: Colors.white54,
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)),
                       filled: true),
@@ -78,7 +87,7 @@ class _RegisterState extends State<Register>{
                     style: TextButton.styleFrom(
                         backgroundColor: Colors.indigoAccent,
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 130, vertical: 13)),
+                            horizontal: 131, vertical: 13)),
                     onPressed: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) => const TempLogin()));
@@ -105,7 +114,7 @@ class _RegisterState extends State<Register>{
                   ),
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 16,
                 ),
                 InkWell(
                   onTap: () {},
@@ -137,7 +146,7 @@ class _RegisterState extends State<Register>{
                   ),
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 33,
                 ),
                 InkWell(
                   onTap: () {},
